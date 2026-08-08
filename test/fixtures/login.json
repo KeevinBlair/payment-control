@@ -1,0 +1,10 @@
+{
+    "admin": {
+        "email": "admin@admin.com.br",
+        "senha": "123123"
+    },
+    "pgats": {
+        "email": "pgats@turma3.com",
+        "senha": "123456"
+    }
+}
