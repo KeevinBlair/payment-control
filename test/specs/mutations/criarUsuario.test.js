@@ -16,7 +16,7 @@ describe('Mutation - Criar Usuário', () => {
                         }`,
                 variables: {
                     "input": {
-                        "email": "teste8@teste.com.br",
+                        "email": "teste10@teste.com.br",
                         "senha": "123abc",
                         "nome": "Kevin",
                         "ativo": true
@@ -26,7 +26,7 @@ describe('Mutation - Criar Usuário', () => {
 
         expect(resposta.status).to.equal(200);
         expect(resposta.body.data.criarUsuario).to.have.property('id');
-        expect(resposta.body.data.criarUsuario).to.have.property('email', 'teste8@teste.com.br');
+        expect(resposta.body.data.criarUsuario).to.have.property('email', 'teste10@teste.com.br');
         expect(resposta.body.data.criarUsuario).to.have.property('nome', 'Kevin');
         expect(resposta.body.data.criarUsuario).to.have.property('ativo', true);
 

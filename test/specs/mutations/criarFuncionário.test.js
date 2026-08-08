@@ -14,8 +14,8 @@ describe('Mutation - Criar Funcionário', () => {
                     }
                 }`,
                 variables: {
-                    email: "admin@admin.com.br",
-                    senha: "123123"
+                    email: "admin@admin.com",
+                    senha: "123456"
                 }
             })
 
