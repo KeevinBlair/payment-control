@@ -25,7 +25,6 @@ describe('Mutation - Criar Funcionário', () => {
     })
     it('deve criar um funcionário quando preencho os campos obrigatórios de forma válida', async () => {
         let cpf = Date.now()
-        console.log(cpf)
         const resposta = await request('http://localhost:4000')
             .post('/graphql')
             .set('Authorization', `Bearer ${token}`)
@@ -55,7 +54,6 @@ describe('Mutation - Criar Funcionário', () => {
     })
     it('deve criar um funcionário quando preencho todos os campos de forma válida', async () => {
         let cpf = Date.now()
-        console.log(cpf)
         const resposta = await request('http://localhost:4000')
             .post('/graphql')
             .set('Authorization', `Bearer ${token}`)
